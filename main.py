@@ -50,8 +50,7 @@ for x in range(0, k):
         map_centroid_old = map_centroid
     list_closest = get_closest(sc, map_points, map_centroid)
     map_centroid = update_algorithm(map_points, list_closest, nb_centroid, sc, map_centroid)
-    if nb_centroid == 3:
-        display(map_points, list_closest, log_file)
+    display(map_points, list_closest, log_file)
     print("------------------------------------------------")
     print("at iteration ")
     print(x + 1)
